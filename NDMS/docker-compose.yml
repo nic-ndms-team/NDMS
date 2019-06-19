@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ndms.webapi:
+    image: ${DOCKER_REGISTRY-}ndmswebapi
+    build:
+      context: .
+      dockerfile: NDMS.WebAPI/Dockerfile
